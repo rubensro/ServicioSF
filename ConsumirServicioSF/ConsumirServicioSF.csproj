@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,11 +43,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\com.sf.ws.Timbrado\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.cancelarBase64Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.cancelarPorNotaCreditoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.cancelarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.cancelarViaCSDAlmacenadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.CFDICancelacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.CFDICertificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.CFDIResultadoCertificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.enviarSolicitudCancelacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.timbrarBase64Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\ConsumirServicioSF.com.sf.ws.Timbrado.timbrarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\com.sf.ws.Timbrado\Timbrado.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\com.sf.ws.Timbrado\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\com.sf.ws.Timbrado\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\com.sf.ws.Timbrado\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\com.sf.ws.Timbrado\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
